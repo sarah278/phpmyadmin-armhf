@@ -1,4 +1,4 @@
-# Official phpMyAdmin Docker image
+# Unofficial phpMyAdmin Docker image
 
 Run phpMyAdmin with Alpine, supervisor, nginx and PHP FPM.
 
