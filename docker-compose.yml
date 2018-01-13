@@ -1,8 +1,9 @@
 phpmyadmin:
-    image: phpmyadmin/phpmyadmin
+    image: sk278/phpmyadmin-armhf
     container_name: phpmyadmin
     environment:
-     - PMA_ARBITRARY=1
+     - PMA_HOST=<ip/hostname>
+     - PMA_PORT=3306
     restart: always
     ports:
      - 8080:80
