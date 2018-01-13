@@ -40,35 +40,6 @@ use `PMA_PORT` to specify port of the server in case it's not the default one:
 docker run --name myadmin -d -e PMA_HOST=dbhost -p 8080:80 sk278/phpmyadmin-armhf
 ```
 
-## Usage with arbitrary server
-
-You can use arbitrary servers by adding ENV variable `PMA_ARBITRARY=1` to the startup command:
-
-```
-docker run --name myadmin -d -e PMA_ARBITRARY=1 -p 8080:80 sk278/phpmyadmin-armhf
-```
-
-## Usage with docker-compose and arbitrary server
-
-This will run phpMyAdmin with arbitrary server - allowing you to specify MySQL/MariaDB
-server on login page.
-
-Using the docker-compose.yml from https://github.com/phpmyadmin/docker
-
-```
-docker-compose up -d
-```
-
-## Run the E2E tests with docker-compose
-
-You can run the E2E tests with the local test environment by running MariaDB/MySQL databases. Adding ENV variable `PHPMYADMIN_RUN_TEST=true` already added on docker-compose file. Simply run:
-
-Using the docker-compose.testing.yml from https://github.com/phpmyadmin/docker
-
-```
-docker-compose -f docker-compose.testing.yml up phpmyadmin
-```
-
 ## Adding Custom Configuration
 
 You can add your own custom config.inc.php settings (such as Configuration Storage setup) 
@@ -105,6 +76,5 @@ Set the variable ``PMA_ABSOLUTE_URI`` to the fully-qualified path (``https://pma
 
 For more detailed documentation see https://docs.phpmyadmin.net/en/latest/setup.html#installing-using-docker
 
-[hub]: https://hub.docker.com/r/phpmyadmin/phpmyadmin/
+[hub]: https://hub.docker.com/r/sk278/phpmyadmin-armhf/
 
-Please report any issues with the Docker container to https://github.com/phpmyadmin/docker/issues
