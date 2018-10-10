@@ -21,6 +21,7 @@ You can use following tags on Docker hub:
 
 * `latest` - latest stable release
 * `4.7.7` - 4.7.7 release
+* `4.8.3` - 4.8.3 release
 
 ## Usage with linked server
 
